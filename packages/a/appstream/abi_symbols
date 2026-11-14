@@ -102,8 +102,11 @@ libAppStreamQt.so.3:_ZN9AppStream12ComponentBoxD1Ev
 libAppStreamQt.so.3:_ZN9AppStream12ComponentBoxD2Ev
 libAppStreamQt.so.3:_ZN9AppStream12ComponentBoxaSERKS0_
 libAppStreamQt.so.3:_ZN9AppStream12ComponentBoxpLERKS0_
+libAppStreamQt.so.3:_ZN9AppStream13ContentRating10groupTitleENS0_5GroupE
 libAppStreamQt.so.3:_ZN9AppStream13ContentRating12addAttributeERK7QStringNS0_11RatingValueE
 libAppStreamQt.so.3:_ZN9AppStream13ContentRating12allRatingIdsEv
+libAppStreamQt.so.3:_ZN9AppStream13ContentRating14attributeGroupERK7QString
+libAppStreamQt.so.3:_ZN9AppStream13ContentRating14attributeTitleERK7QString
 libAppStreamQt.so.3:_ZN9AppStream13ContentRating14systemToStringENS0_6SystemE
 libAppStreamQt.so.3:_ZN9AppStream13ContentRating15systemFormatAgeENS0_6SystemEj
 libAppStreamQt.so.3:_ZN9AppStream13ContentRating16staticMetaObjectE
@@ -176,6 +179,7 @@ libAppStreamQt.so.3:_ZN9AppStream4Pool12loadFinishedEb
 libAppStreamQt.so.3:_ZN9AppStream4Pool13addComponentsERKNS_12ComponentBoxE
 libAppStreamQt.so.3:_ZN9AppStream4Pool16staticMetaObjectE
 libAppStreamQt.so.3:_ZN9AppStream4Pool20addExtraDataLocationERK7QStringNS_8Metadata11FormatStyleE
+libAppStreamQt.so.3:_ZN9AppStream4Pool20addExtraDataLocationERK7QStringNS_8Metadata11FormatStyleENS_9Component5ScopeES3_
 libAppStreamQt.so.3:_ZN9AppStream4Pool22overrideCacheLocationsERK7QStringS3_
 libAppStreamQt.so.3:_ZN9AppStream4Pool23resetExtraDataLocationsEv
 libAppStreamQt.so.3:_ZN9AppStream4Pool23setLoadStdDataLocationsEb
@@ -1408,6 +1412,8 @@ libappstream.so.5:as_component_to_xml_data
 libappstream.so.5:as_content_rating_add_attribute
 libappstream.so.5:as_content_rating_attribute_from_csm_age
 libappstream.so.5:as_content_rating_attribute_get_description
+libappstream.so.5:as_content_rating_attribute_get_group
+libappstream.so.5:as_content_rating_attribute_get_title
 libappstream.so.5:as_content_rating_attribute_to_csm_age
 libappstream.so.5:as_content_rating_get_all_rating_ids
 libappstream.so.5:as_content_rating_get_kind
@@ -1415,6 +1421,8 @@ libappstream.so.5:as_content_rating_get_minimum_age
 libappstream.so.5:as_content_rating_get_rating_ids
 libappstream.so.5:as_content_rating_get_type
 libappstream.so.5:as_content_rating_get_value
+libappstream.so.5:as_content_rating_group_get_title
+libappstream.so.5:as_content_rating_group_get_type
 libappstream.so.5:as_content_rating_new
 libappstream.so.5:as_content_rating_set_kind
 libappstream.so.5:as_content_rating_set_value
@@ -1567,6 +1575,10 @@ libappstream.so.5:as_license_is_free_license
 libappstream.so.5:as_license_is_metadata_license
 libappstream.so.5:as_license_is_metadata_license_id
 libappstream.so.5:as_license_to_spdx_id
+libappstream.so.5:as_locale_canonicalize
+libappstream.so.5:as_locale_canonicalize_buf
+libappstream.so.5:as_locale_chain_contains
+libappstream.so.5:as_locale_chain_init
 libappstream.so.5:as_locale_is_bcp47
 libappstream.so.5:as_locale_is_posix
 libappstream.so.5:as_locale_strip_encoding
@@ -1627,6 +1639,7 @@ libappstream.so.5:as_path_segment_sanitize
 libappstream.so.5:as_path_segment_verify
 libappstream.so.5:as_pool_add_components
 libappstream.so.5:as_pool_add_extra_data_location
+libappstream.so.5:as_pool_add_extra_data_location_full
 libappstream.so.5:as_pool_add_flags
 libappstream.so.5:as_pool_build_search_tokens
 libappstream.so.5:as_pool_clear
@@ -1891,6 +1904,8 @@ libappstream.so.5:as_size_kind_get_type
 libappstream.so.5:as_size_kind_to_string
 libappstream.so.5:as_spdx_license_detokenize
 libappstream.so.5:as_spdx_license_tokenize
+libappstream.so.5:as_stemmer_cache_hold
+libappstream.so.5:as_stemmer_cache_release
 libappstream.so.5:as_stemmer_get
 libappstream.so.5:as_stemmer_stem
 libappstream.so.5:as_str_replace
